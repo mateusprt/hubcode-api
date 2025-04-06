@@ -22,7 +22,7 @@ jobs:
           java-version: '17'
 
       - name: Compilar o projeto
-        run: ./mvnw compile
+        run: mvn compile
 
       - name: Rodar os testes
-        run: ./mvnw test
+        run: mvn test

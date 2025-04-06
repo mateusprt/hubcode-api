@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Compilar o projeto da API
+      - name: Compilar o projeto
         run: mvn compile
 
       - name: Rodar os testes

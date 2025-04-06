@@ -22,7 +22,7 @@ public class CreateCommentService {
             throw new ArticleNotFoundException("Artigo não localizado.");
         }
         if(comment.getComment().isEmpty()) {
-            throw new InvalidCommentException("Comentário não pode ser vazio.");
+            throw new InvalidCommentException("Comentário não pode ser vazio");
         }
         return this.commentsRepository.salvar(comment);
     }

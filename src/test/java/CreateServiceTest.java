@@ -21,8 +21,8 @@ public class CreateServiceTest {
     @BeforeEach
     void setup() {
         articleRepository = new ArticleRepositoryInMemory();
-        Article article1 = new Article(1, "some title 1", "some description 1");
-        Article article2 = new Article(2, "some title 2", "some description 2");
+        Article article1 = new Article(1, "article title 1", "some description 1");
+        Article article2 = new Article(2, "article title 2", "some description 2");
 
         articleRepository.salvar(article1);
         articleRepository.salvar(article2);
